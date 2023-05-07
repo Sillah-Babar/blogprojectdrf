@@ -10,7 +10,7 @@ permissions:
 hooks:
   BeforeInstall:
       - location: scripts/clean_instance.sh
-        timeout: 300
+        timeout: 800
         runas: ubuntu
   AfterInstall:
       - location: scripts/instance_os_dependencies.sh
